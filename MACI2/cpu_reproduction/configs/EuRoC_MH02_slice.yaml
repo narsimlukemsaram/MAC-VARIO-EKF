@@ -1,0 +1,5 @@
+type: EuRoC
+name: MH02slice
+args:
+    root: /scr/user/msakhtar/Files/Projects/UMRP4/MAC-VO/data/EuRoC/machine_hall/MH_02_easy/mav0
+    gt_pose: true

@@ -1,0 +1,5 @@
+type: EuRoC
+name: V202slice
+args:
+    root: /scr/user/msakhtar/Files/Projects/UMRP4/MAC-VO/data/EuRoC/vicon_room2/V2_02_medium/mav0
+    gt_pose: true

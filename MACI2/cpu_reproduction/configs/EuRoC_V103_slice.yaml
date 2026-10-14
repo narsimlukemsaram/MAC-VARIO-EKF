@@ -1,0 +1,5 @@
+type: EuRoC
+name: V103slice
+args:
+    root: /scr/user/msakhtar/Files/Projects/UMRP4/MAC-VO/data/EuRoC/vicon_room1/V1_03_difficult/mav0
+    gt_pose: true

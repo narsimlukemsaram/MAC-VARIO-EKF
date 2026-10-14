@@ -1,0 +1,152 @@
+# Byte-compiled / optimized / DLL files
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# PyTorch checkpoints / model files
+**/checkpoints/
+*.pt
+*.pth
+
+# Log files
+*.log
+*.zip
+
+# Regenerable run outputs -- 2804 files, 30GB tracked as of 2026-08-12, untracked same date.
+MACVIO-main-v3/results/
+
+# Cache/checkpoint/model-output binaries -- rebuildable, not source. 100MB+ single files
+# broke a plain git push before this rule existed (GitHub's hard limit is 100MB/blob).
+*.pkl
+*.pickle
+*.ckpt
+
+# macOS zip-extraction artifacts -- pure junk, no content value.
+**/__MACOSX/
+
+# Scratch/build working dirs -- not source.
+draft/_work/
+revision_v1/build/cache/
+revision_v1/build/qc_pages/
+
+# Old version-folder sprawl (v07-v24 paper drafts, v34-v41 posters) -- 1.1GB, largely duplicated
+# between the two trees, each with its own copy of the AirIMU/MAC-VO/MACVIO source already
+# tracked elsewhere in this repo. Superseded by revision_v1/. Left on local disk, untracked.
+draft/paper-gen/
+draft/v8 files/
+
+# Browser-saved snapshot of an authenticated Google Drive session -- can carry live
+# session/XSRF tokens and private file listings. Excluded pending explicit review, not deleted.
+draft/Fixed Forms/Ranyn - Google Drive.html
+draft/Fixed Forms/Ranyn - Google Drive_files/
+
+# CPU cache-build working dirs -- each is a full copy of MAC-VO-main's source (~1GB across all 5)
+# plus the tensor_map.npz caches themselves, both regenerable/duplicate. The real deliverables
+# (scripts, configs, result logs) are extracted into MACI2/cpu_reproduction/, tracked normally.
+MACI2/local_cache_build/
+MACI2/local_cache_build_MH04/
+MACI2/local_cache_build_V101/
+MACI2/local_cache_build_V103/
+MACI2/local_cache_build_V202/
+
+# Same class as above, MH02-specific builds from 2026-08-17 (missed by the original rule since
+# they postdate it) -- 84-87MB each, regenerable, source already tracked elsewhere. Found
+# untracked-but-not-ignored during a 2026-08-22 /swe sweep; see feedback_check_gitignore_before_
+# declaring_saved in the agent memory system for why this needed checking, not assuming.
+MACI2/local_cache_build_MH02_gpu_20260817/
+MACI2/local_cache_build_MH02_native_20260817/
+MACI2/local_cache_build_MH02_skip20_native_20260817/
+
+# Verbatim backup of a delivered remote cache, made before a local reproduction attempt --
+# 323MB, a backup copy by definition, not source. See MACI2/remote_cache_reference/CACHE_INFO.md
+# (tracked) for the provenance this backs up.
+MACI2/remote_cache_reference_BACKUP_20260817/
+
+# Named-cache symlinks into ephemeral session job-scratch storage (~/.claude/jobs/*/tmp/...) --
+# resolve to nothing outside the session that created them; committing the symlink would be
+# actively wrong, not just unnecessary.
+macvo_cache_*_native_ccfixed_*
+
+# Exception to the global *.log rule above -- these are real gated-evaluation result logs,
+# not noise, deliberately extracted out of the gitignored build dirs to be tracked.
+!MACI2/cpu_reproduction/results/*.log
+
+# Reference PDFs and upstream clones: large, and reproducible from the URLs in
+# study/refs/MANIFEST.md. The manifest is tracked; the binaries are not.
+study/refs/*.pdf
+study/refs/AirIMU_upstream/
+
+# derived from the committed thesis PDF; regenerate with study/render_thesis_pages_20260831.py
+study/thesis_png_all/*.png
+study/session_backup_20260905/*.jsonl*
+.kgraph.json
+.env
+*.env
+.gh_pat
+
+# ---------------------------------------------------------------------------
+# Public GitHub release: local environments, datasets, and experimental assets
+# ---------------------------------------------------------------------------
+# Virtual environments (especially the project's Windows environment)
+.venv_macvario/
+.venv/
+venv/
+env/
+
+# Local tooling, build artefacts, and notebook checkpoints
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+.DS_Store
+Thumbs.db
+
+# EuRoC and other downloaded datasets; keep optional folder placeholder
+/data/*
+!/data/.gitkeep
+/datasets/*
+!/datasets/.gitkeep
+/tmp_euroc/
+
+# Frozen ICRA 2027 experiment archives and locally generated outputs
+/ICRA2027_RESULTS_FREEZE_20260915/
+/MACVIO-main-v3/macvo-cache/
+
+# Local credentials and machine-specific private configuration
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*.json
+*secrets*.json
+*.token
+
+# Keep the existing source, configuration, reproducibility scripts and
+# deliberately whitelisted evaluation .log files visible to Git.
+# Review any unignored artifacts before staging or pushing.
+
+# ==========================================
+# MAC-VARIO-EKF public release exclusions
+# ==========================================
+
+# Generated evaluation results
+/MACVIO-main-v3/results_reproduction/
+/MACVIO-main-v3/results_20260826/
+
+# Historical and superseded cache
+/MACVIO-main-v3/macvo-cache-superseded-20260519/
+
+# Internal research studies and working notes
+/study/
+/planning/
+/CLAUDE.md
+
+# Development-only experiment outputs
+/baseline_metrics_only/
+
+# Generated file-review inventories
+/github_files_review.txt
+
+# Local backup files
+/.gitignore.backup

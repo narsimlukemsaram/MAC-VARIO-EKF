@@ -1,0 +1,40 @@
+[V202] [window build] 22 full stride-10 windows built
+[V202]   win   0 fidx=[0..90]  maha/dof=    96.59  vel_rmse(raw)=0.7403  vel_rmse(learned)=0.7395  g_dir_err(raw)=6.33
+[V202]   win   1 fidx=[100..190]  maha/dof=   323.95  vel_rmse(raw)=1.2166  vel_rmse(learned)=1.2178  g_dir_err(raw)=4.70
+[V202]   win   2 fidx=[200..290]  maha/dof=   302.11  vel_rmse(raw)=1.0046  vel_rmse(learned)=1.0038  g_dir_err(raw)=16.65
+[V202]   win   3 fidx=[300..390]  maha/dof=   319.37  vel_rmse(raw)=0.5383  vel_rmse(learned)=0.5440  g_dir_err(raw)=0.37
+[V202]   win   4 fidx=[400..490]  maha/dof=   192.38  vel_rmse(raw)=0.8800  vel_rmse(learned)=0.8805  g_dir_err(raw)=12.93
+[V202]   win   5 fidx=[500..590]  maha/dof=   372.35  vel_rmse(raw)=0.7452  vel_rmse(learned)=0.7501  g_dir_err(raw)=6.42
+[V202]   win   6 fidx=[600..690]  maha/dof=   326.26  vel_rmse(raw)=0.8214  vel_rmse(learned)=0.8125  g_dir_err(raw)=12.25
+[V202]   win   7 fidx=[700..790]  maha/dof=   329.17  vel_rmse(raw)=1.0125  vel_rmse(learned)=1.0127  g_dir_err(raw)=7.50
+[V202]   win   8 fidx=[800..890]  maha/dof=   408.46  vel_rmse(raw)=1.0544  vel_rmse(learned)=1.0577  g_dir_err(raw)=3.70
+[V202]   win   9 fidx=[900..990]  maha/dof=   211.31  vel_rmse(raw)=0.7782  vel_rmse(learned)=0.7716  g_dir_err(raw)=0.55
+[V202]   win  10 fidx=[1000..1090]  maha/dof=   462.56  vel_rmse(raw)=0.7170  vel_rmse(learned)=0.7179  g_dir_err(raw)=8.38
+[V202]   win  11 fidx=[1100..1190]  maha/dof=    61.12  vel_rmse(raw)=0.3418  vel_rmse(learned)=0.3392  g_dir_err(raw)=0.38
+[V202]   win  12 fidx=[1200..1290]  maha/dof=   233.73  vel_rmse(raw)=0.8035  vel_rmse(learned)=0.8036  g_dir_err(raw)=10.63
+[V202]   win  13 fidx=[1300..1390]  maha/dof=   154.42  vel_rmse(raw)=0.5246  vel_rmse(learned)=0.5291  g_dir_err(raw)=0.64
+[V202]   win  14 fidx=[1400..1490]  maha/dof=   184.54  vel_rmse(raw)=0.6963  vel_rmse(learned)=0.6923  g_dir_err(raw)=2.75
+[V202]   win  15 fidx=[1500..1590]  maha/dof=   409.12  vel_rmse(raw)=1.6159  vel_rmse(learned)=1.6224  g_dir_err(raw)=17.50
+[V202]   win  16 fidx=[1600..1690]  maha/dof=   430.02  vel_rmse(raw)=0.8633  vel_rmse(learned)=0.8671  g_dir_err(raw)=10.51
+[V202]   win  17 fidx=[1700..1790]  maha/dof=   427.42  vel_rmse(raw)=1.1886  vel_rmse(learned)=1.1935  g_dir_err(raw)=26.99
+[V202]   win  18 fidx=[1800..1890]  maha/dof=   204.69  vel_rmse(raw)=0.7052  vel_rmse(learned)=0.7031  g_dir_err(raw)=2.50
+[V202]   win  19 fidx=[1900..1990]  maha/dof=   319.10  vel_rmse(raw)=0.8295  vel_rmse(learned)=0.8308  g_dir_err(raw)=4.04
+[V202]   win  20 fidx=[2000..2090]  maha/dof=   260.27  vel_rmse(raw)=0.6624  vel_rmse(learned)=0.6671  g_dir_err(raw)=3.99
+[V202]   win  21 fidx=[2100..2190]  maha/dof=   253.27  vel_rmse(raw)=0.7034  vel_rmse(learned)=0.7000  g_dir_err(raw)=0.89
+
+[V202] === Unfiltered aggregate over all 22 windows ===
+[V202] raw IMU:     mean vel_rmse = 0.8383 m/s
+[V202] learned IMU: mean vel_rmse = 0.8389 m/s
+
+[V202] === Mahalanobis sweep (raw IMU) ===
+[V202]   M_THR= 20: 0/22 windows pass
+[V202]   M_THR= 30: 0/22 windows pass
+[V202]   M_THR= 50: 0/22 windows pass
+
+[V202] === Mahalanobis sweep (learned IMU) ===
+[V202]   M_THR= 20: 0/22 windows pass
+[V202]   M_THR= 30: 0/22 windows pass
+[V202]   M_THR= 50: 0/22 windows pass
+
+[V202] paper target: 0.018 m/s, G.Dir 0.889 deg
+[V202] GATED_EVAL_DONE

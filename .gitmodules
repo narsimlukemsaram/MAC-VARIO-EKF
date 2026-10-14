@@ -1,0 +1,6 @@
+[submodule "third_party/AirIMU"]
+	path = third_party/AirIMU
+	url = https://github.com/haleqiu/AirIMU.git
+[submodule "third_party/MAC-VO"]
+	path = third_party/MAC-VO
+	url = https://github.com/MAC-VO/MAC-VO.git
