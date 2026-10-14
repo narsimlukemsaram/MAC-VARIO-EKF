@@ -2,7 +2,6 @@
 
 **Metrics-Aware Visual-Inertial Odometry with Uncertainty-Adaptive Error-State EKF Fusion for GPS-Denied Aerial Navigation**
 
-Research implementation associated with a paper submitted to **IEEE ICRA 2027**. Submission does not imply acceptance.
 
 ## Overview
 
@@ -20,7 +19,6 @@ MAC-VARIO-EKF investigates visual-inertial state estimation for aerial navigatio
 | `third_party/AirIMU/` | AirIMU upstream dependency (Git submodule) |
 | `third_party/MAC-VO/` | MAC-VO upstream dependency (Git submodule) |
 
-Not all local development, evaluation, and diagnostic files are included in this initial release.
 
 ## Obtain the code
 
@@ -55,4 +53,4 @@ Keep all upstream copyright and licence notices intact. The licences of nested d
 
 ## Citation
 
-The associated research paper has been submitted to IEEE ICRA 2027. A verified public bibliographic record and citation entry will be added when available. Please do not cite the submission as an accepted publication.
+We will add a verified public bibliographic record and citation entry when available. 
